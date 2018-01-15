@@ -1,0 +1,53 @@
+/* 头部 */
+.ag-idea-report .aigo-header {
+  position: fixed;
+  z-index: 2;
+}
+
+/* 外层 */
+.ag-idea-report .rx-wrap {
+  padding-top: 50px;
+}
+
+/* 内容 */
+.ag-idea-report-content {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 右侧 */
+.ag-idea-report-content .rx-page-component {
+  height: 100%;
+  padding: 0 0 0 200px;
+}
+
+/* 侧边栏 */
+.ag-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  background: #fff;
+  border-right: 1px solid #e7e7e7;
+  padding: 65px 0px 15px 20px;
+  z-index: 1;
+}
+
+.ag-sidebar ul {
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+}
+
+.ag-sidebar ul li a {
+  font-size: 14px;
+  color: inherit;
+  line-height: 32px;
+}
+
+.ag-sidebar ul li a:hover,
+.ag-sidebar ul li a.active {
+  color: #50aff2;
+}
+

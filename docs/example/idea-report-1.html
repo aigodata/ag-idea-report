@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- 公共样式 -->
+    <link rel="stylesheet" type="text/css" href="../assets/styles/idea-report/idea-report-1.css">
+</head>
+<body>
+  <!-- 外层 -->
+  <div class="idea-report-1">
+    <!-- 主标题 -->
+    <h1 class="title">哪里</h1>
+    <!-- 副标题 -->
+    <h2 class="sub-title">运输的地点和方法。</h2>
+    <!-- 每个条目 -->
+    <div class="each-wrap">
+      <h6 class="each-title">图7 位置记录</h6>
+      <!-- 每个图表 -->
+      <div class="chart-each">
+        <div id="recorded-top" class="chart-small"></div>
+        <div id="recorded-bottom" class="chart-small"></div>
+      </div>
+    </div>
+    <!-- 每个条目 -->
+    <div class="each-wrap">
+      <div class="rx-clearfix">
+        <!-- 每个条目 -->
+        <div class="rx-fl width-1-3">
+          <div class="item">
+            <h6 class="each-title">总记录位置</h6>
+            <div class="each-cont">
+              <p class="title">258</p>
+            </div>
+          </div>
+        </div>
+        <!-- 每个条目 -->
+        <div class="rx-fl width-1-3">
+          <div class="item">
+            <h6 class="each-title">大多数报道的位置</h6>
+            <div class="each-cont">
+              <p class="title">办公室</p>
+              <span>73乘以28人</span>
+            </div>
+          </div>
+        </div>
+        <!-- 每个条目 -->
+        <div class="rx-fl width-1-3">
+          <div class="item">
+            <h6 class="each-title">每遇到平均位置</h6>
+            <div class="each-cont">
+              <p class="title">1.83</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 每个条目 -->
+    <div class="each-wrap">
+      <h6 class="each-title">图8 行走与其他形式的交通工具</h6>
+      <!-- 每个图表 -->
+      <div class="chart-each">
+        <div id="transportatin-demo" class="chart-large"></div>
+      </div>
+    </div>
+    <!-- 每个条目 -->
+    <div class="each-wrap">
+      <div class="rx-clearfix">
+        <!-- 每个条目 -->
+        <div class="rx-fl width-1-3">
+          <div class="item">
+            <h6 class="each-title">methds运输</h6>
+            <div class="each-cont">
+              <p class="title">23</p>
+              <p>
+                飞机，自行车，公共汽车，汽车，电梯，自动扶梯，渡船，贡多拉，想象。KCR东铁，豪华轿车，NJ轨道，
+                公共交通，过山车，SMALI塑料马，地铁，出租车，远程运输，时间旅行，火车，有轨
+                电车，步行
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 每个条目 -->
+        <div class="rx-fl width-1-3">
+          <div class="item">
+            <h6 class="each-title">中美研究站使用过程</h6>
+            <div class="each-cont">
+              <p class="title color-orange">十五</p>
+              <p>
+                1998年的雪佛兰风投2009年沃尔沃540辆，99辆丰田花冠，EMW，克里斯托弗墨菲的汽车，本田思域，伊恩弗
+                莱明的汽车，洛林(1990年的梅赛德斯车)，玛丽娜的汽车，租赁车，罗伯的车，丰田凯美瑞，范，大众甲壳虫
+                和大众捷达。
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 每个条目 -->
+        <div class="rx-fl width-1-3">
+          <div class="item">
+            <h6 class="each-title">报告与运输</h6>
+            <div class="each-cont">
+              <p class="title">56%</p>
+            </div>
+          </div>
+          <div class="item">
+            <h6 class="each-title margin-top-large">最好的运输方式</h6>
+            <div class="each-cont">
+              <p class="title">豪华轿车</p>
+              <span>2009年6月12日,4最喜欢的时刻</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 脚本库 -->
+  <script type="text/javascript" src="../assets/scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="../assets/scripts/axios.min.js"></script>
+  <!-- echarts 图表库 -->
+  <script type="text/javascript" src="../src/echarts.min.js"></script>
+  <!-- agChart -->
+  <script type="text/javascript" src="../src/ag-charts.js"></script>
+  <!-- 折线图 堆叠区域 上-->
+  <script type="text/javascript" src="../src/idea-report-1/recorded/recorded-top.js"></script>
+  <!-- 折线图 堆叠区域 下-->
+  <script type="text/javascript" src="../src/idea-report-1/recorded/recorded-bottom.js"></script>
+  <!-- 运输 图表 -->
+  <script type="text/javascript" src="../src/idea-report-1/transportatin/transportatin-demo.js"></script>
+
+  <script>
+    // 折线图 堆叠区域 上
+    axios.get('../src/idea-report-1/recorded/recorded-top.json').then(function (response) {
+      agChart.recorded.top.init('#recorded-top', '', response.data);
+    });
+
+    // 折线图 堆叠区域 下
+    axios.get('../src/idea-report-1/recorded/recorded-bottom.json').then(function (response) {
+      agChart.recorded.bottom.init('#recorded-bottom', '', response.data);
+    });
+
+    // 运输 图表
+    axios.get('../src/idea-report-1/transportatin/transportatin-demo.json').then(function (response) {
+      agChart.transportatin.demo.init('#transportatin-demo', '', response.data);
+    });
+  </script>
+</body>
+</html>

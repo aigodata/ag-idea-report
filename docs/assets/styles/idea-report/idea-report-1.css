@@ -1,0 +1,170 @@
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+body {
+  font-size: 12px;
+  color: #242021;
+  height: 100%;
+  background: #fff;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*浮动&清除浮动*/
+.rx-fl {
+  float: left;
+}
+
+.rx-fr {
+  float: right;
+}
+
+.rx-clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/*定位*/
+.rx-relative {
+  position: relative;
+}
+
+.rx-absolute {
+  position: absolute;
+}
+
+/*居中*/
+.rx-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* 宽度 */
+.width-1-3 {
+  width: 33.333%;
+}
+
+.each-wrap .width-1-3:first-child {
+  padding-right: 13.333px;
+}
+
+.each-wrap .width-1-3:nth-child(2) {
+  padding: 0 6.666px;
+}
+
+.each-wrap .width-1-3:last-child {
+  padding-left: 13.333px;
+}
+
+/* 边距 */
+.margin-top-large{
+  margin-top: 20px !important;
+}
+
+/* 颜色 */
+.color-orange{
+  color: #f16532;
+}
+
+/* 页面样式 */
+.idea-report-1 {
+  padding: 50px;
+}
+
+.idea-report-1 h1.title {
+  font-size: 38px;
+  color: #f16532;
+  font-weight: bold;
+}
+
+/* 每个标题 */
+.idea-report-1 .each-title {
+  border-bottom: 1px solid #4c4c4c;
+  margin-top: 50px;
+}
+
+.each-wrap .each-cont p.title{
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+/* 图表 */
+.chart-small {
+  width: 100%;
+  height: 150px;
+}
+
+.chart-large{
+  width: 100%;
+  height: 300px;
+}
