@@ -264,16 +264,16 @@ table {
 .idea-report-4 .layout-right h1.title span:first-child,
 .layout-right .each-title.special span:first-child,
 .layout-right .grid-wrap .each-grid:first-child,
-.layout-right .each-grid-small > div:first-child{
+.layout-right .each-grid-small > div:first-child {
   border-right: 1px dashed #ed3f36;
 }
 
-.layout-right .calibration ul li:not(:first-child){
+.layout-right .calibration ul li:not(:first-child) {
   border-left: 1px dashed #ed3f36;
 }
 
 .layout-right .padding-left > div:last-child,
-.layout-right .padding-right > div:last-child{
+.layout-right .padding-right > div:last-child {
   border-bottom: 1px solid #eb5a69;
 }
 
@@ -281,7 +281,7 @@ table {
   border-top: 1px dashed #ed3f36;
 }
 
-.layout-right .border-top{
+.layout-right .border-top {
   border-top: 1px solid #eb5a69;
 }
 
@@ -328,6 +328,22 @@ table {
 
 .progress-bar ul li span.num {
   right: 2px;
+}
+
+@media screen and (max-width: 1640px) {
+  .layout-left,
+  .layout-right {
+    float: none;
+    width: 100%;
+  }
+
+  .layout-left {
+    border-right: none;
+  }
+
+  .layout-right {
+    margin-top: 20px;
+  }
 }
 
 
