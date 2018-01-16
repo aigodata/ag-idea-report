@@ -1,0 +1,246 @@
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+body {
+  font-size: 12px;
+  color: #979caf;
+  height: 100%;
+  background: #333647;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*浮动&清除浮动*/
+.rx-fl {
+  float: left;
+}
+
+.rx-fr {
+  float: right;
+}
+
+.rx-clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/*定位*/
+.rx-relative {
+  position: relative;
+}
+
+.rx-absolute {
+  position: absolute;
+}
+
+/*居中*/
+.rx-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* 边距 */
+.margin-top-large {
+  margin-top: 20px !important;
+}
+
+.clear-margin-top {
+  margin-top: 0 !important;
+}
+
+/* 边框 */
+.border-top {
+  border-top: 1px solid #6b6e7f;
+}
+
+/* 页面样式 */
+.idea-report-3 {
+  padding: 50px;
+}
+
+.idea-report-3 h1.title {
+  font-size: 22px;
+  color: #5ddcfd;
+  border-bottom: 1px solid #5ddcfd;
+  padding-bottom: 5px;
+}
+
+/* 每个标题 */
+.each-wrap .each-cont p.title {
+  font-size: 48px;
+  color: #5ddcfd;
+}
+
+.each-wrap .each-cont p.title-small {
+  font-size: 24px;
+  color: #5ddcfd;
+  padding-top: 5px;
+}
+
+.each-wrap .each-cont p.title-small.special {
+  font-size: 18px;
+}
+
+.each-wrap .item {
+  padding: 10px 0;
+}
+
+.each-wrap .item .width-1-2 {
+  width: 50%;
+}
+
+.each-wrap .item .width-1-2:last-child {
+  border-left: 1px solid #6b6e7f;
+  padding-left: 28px;
+}
+
+/* 进度条 */
+.progress-bar {
+  padding: 10px 0;
+}
+
+.progress-bar ul li {
+  position: relative;
+  width: 100%;
+  height: 16px;
+  border-bottom: 1px dashed #6b6e7f;
+  margin-top: 5px;
+}
+
+.progress-bar ul li div {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  background: #5ddcfd;
+}
+
+.progress-bar ul li span {
+  position: absolute;
+  top: -4px;
+  z-index: 999;
+}
+
+.progress-bar ul li span.name {
+  left: 2px;
+}
+
+.progress-bar ul li span.num {
+  right: 2px;
+}
+
+/* 图表 */
+.chart-small {
+  width: 100%;
+  height: 150px;
+}
+
+.chart-large {
+  width: 100%;
+  height: 200px;
+}
+
+/* 图表颠倒 */
+.rotate {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* 左右两侧布局 */
+.layout-left,
+.layout-right {
+  width: 50%;
+}
+
+.layout-left {
+  border-right: 1px solid #6b6e7f;
+  padding-right: 25px;
+}
+
+.layout-right {
+  padding-left: 25px;
+}
+
+/* 右侧 */
+.idea-report-3 .layout-right h1.title {
+  color: #eb5a69;
+  border-bottom: 1px solid #eb5a69;
+}
+
+.layout-right .each-wrap .each-cont p.title,
+.layout-right .each-wrap .each-cont p.title-small {
+  color: #eb5a69;
+}
+
+.layout-right .progress-bar ul li div {
+  background: #eb5a69;
+}

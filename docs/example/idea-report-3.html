@@ -1,10 +1,364 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title></title>
+  <!-- 公共样式 -->
+  <link rel="stylesheet" type="text/css" href="../assets/styles/idea-report/idea-report-3.css">
 </head>
 <body>
-ddsfsf
+<!-- 外层 -->
+<div class="idea-report-3 rx-clearfix">
+  <!-- 左侧 -->
+  <div class="layout-left rx-fl">
+    <!-- 主标题 -->
+    <h1 class="title">短讯服务</h1>
+    <!-- 每个条目 -->
+    <div class="each-wrap">
+      <!-- 每个条目 -->
+      <div class="item">
+        <h6 class="each-title clear-margin-top">参与者</h6>
+        <div class="each-cont">
+          <p class="title">87</p>
+          <p>2% 所有通信的参与者</p>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <h6 class="each-title clear-margin-top">顶级参与者</h6>
+        <div class="each-cont">
+          <div class="progress-bar">
+            <ul>
+              <li>
+                <div style="width:86%"></div>
+                <span class="name">奥尔加贝尔</span>
+                <span class="num">66</span>
+              </li>
+              <li>
+                <div style="width:82%"></div>
+                <span class="name">约书亚gorchov</span>
+                <span class="num">66</span>
+              </li>
+              <li>
+                <div style="width:76%"></div>
+                <span class="name">瑞安案件</span>
+                <span class="num">66</span>
+              </li>
+              <li>
+                <div style="width:70%"></div>
+                <span class="name">推特</span>
+                <span class="num">66</span>
+              </li>
+              <li>
+                <div style="width:60%"></div>
+                <span class="name">奥伦斯坦</span>
+                <span class="num">66</span>
+              </li>
+              <li>
+                <div style="width:50%"></div>
+                <span class="name">马修grzywinski</span>
+                <span class="num">66</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <div class="rx-clearfix">
+          <!-- 每个条目 -->
+          <div class="rx-fl width-1-2">
+            <h6 class="each-title clear-margin-top">大部分短信</h6>
+            <div class="each-cont">
+              <p class="title-small">2月17日</p>
+              <p>586 消息</p>
+            </div>
+          </div>
+          <!-- 每个条目 -->
+          <div class="rx-fl width-1-2">
+            <h6 class="each-title clear-margin-top">天w / o短信</h6>
+            <div class="each-cont">
+              <p class="title-small">7日</p>
+              <p>2% 每年</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <h6 class="each-title clear-margin-top">每小时的短信</h6>
+        <div class="each-cont">
+          <div id="hourly-smsT" class="chart-small"></div>
+          <div id="hourly-smsB" class="chart-small rotate"></div>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <div class="rx-clearfix">
+          <!-- 每个条目 -->
+          <div class="rx-fl width-1-2">
+            <h6 class="each-title clear-margin-top">发送短信</h6>
+            <div class="each-cont">
+              <p class="title-small">18,131</p>
+              <p>平均58 /天</p>
+            </div>
+          </div>
+          <!-- 每个条目 -->
+          <div class="rx-fl width-1-2">
+            <h6 class="each-title clear-margin-top">收到了短信</h6>
+            <div class="each-cont">
+              <p class="title-small">25,895</p>
+              <p>平均71 /天</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <h6 class="each-title clear-margin-top">每月的短信</h6>
+        <div class="each-cont">
+          <div id="total-sms" class="chart-small"></div>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <div class="rx-clearfix">
+          <!-- 每个条目 -->
+          <div class="rx-fl width-1-2">
+            <h6 class="each-title clear-margin-top">发送方</h6>
+            <div class="each-cont">
+              <p class="title">84</p>
+              <p>97% 的参与者</p>
+            </div>
+          </div>
+          <!-- 每个条目 -->
+          <div class="rx-fl width-1-2">
+            <h6 class="each-title clear-margin-top">收件人</h6>
+            <div class="each-cont">
+              <p class="title">59</p>
+              <p>68% 的参与者</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+          <h6 class="each-title clear-margin-top">失败的短信</h6>
+          <div class="each-cont">
+            <p class="title-small">15</p>
+          </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <h6 class="each-title clear-margin-top">短信最长的差距</h6>
+        <div class="each-cont">
+          <p class="title-small">2天,18个小时</p>
+          <p>从2月8日下午6点12分开始</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 右侧 -->
+  <div class="layout-right rx-fl">
+    <!-- 主标题 -->
+    <h1 class="title">邮件服务</h1>
+    <!-- 每个条目 -->
+    <div class="each-wrap">
+      <!-- 每个条目 -->
+      <div class="item">
+        <h6 class="each-title clear-margin-top">参与者</h6>
+        <div class="each-cont">
+          <p class="title">3744</p>
+          <p>2% 所有通信的参与者</p>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <h6 class="each-title clear-margin-top">顶级参与者</h6>
+        <div class="each-cont">
+          <div class="progress-bar">
+            <ul>
+              <li>
+                <div style="width:86%"></div>
+                <span class="name">授权</span>
+                <span class="num">66</span>
+              </li>
+              <li>
+                <div style="width:82%"></div>
+                <span class="name">大牌子</span>
+                <span class="num">66</span>
+              </li>
+              <li>
+                <div style="width:76%"></div>
+                <span class="name">尼古拉斯·费尔顿</span>
+                <span class="num">66</span>
+              </li>
+              <li>
+                <div style="width:70%"></div>
+                <span class="name">奥尔加贝尔</span>
+                <span class="num">66</span>
+              </li>
+              <li>
+                <div style="width:60%"></div>
+                <span class="name">trulia网站</span>
+                <span class="num">66</span>
+              </li>
+              <li>
+                <div style="width:50%"></div>
+                <span class="name">flickr</span>
+                <span class="num">66</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <div class="rx-clearfix">
+          <!-- 每个条目 -->
+          <div class="rx-fl width-1-2">
+            <h6 class="each-title clear-margin-top">大部分邮件</h6>
+            <div class="each-cont">
+              <p class="title-small">2月17日</p>
+              <p>586 邮件</p>
+            </div>
+          </div>
+          <!-- 每个条目 -->
+          <div class="rx-fl width-1-2">
+            <h6 class="each-title clear-margin-top">天w / o邮件</h6>
+            <div class="each-cont">
+              <p class="title-small">7日</p>
+              <p>2% 每年</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <h6 class="each-title clear-margin-top">每小时的邮件</h6>
+        <div class="each-cont">
+          <div id="hourly-emailT" class="chart-small"></div>
+          <div id="hourly-emailB" class="chart-small rotate"></div>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <div class="rx-clearfix">
+          <!-- 每个条目 -->
+          <div class="rx-fl width-1-2">
+            <h6 class="each-title clear-margin-top">发送邮件</h6>
+            <div class="each-cont">
+              <p class="title-small">18,131</p>
+              <p>平均58 /天</p>
+            </div>
+          </div>
+          <!-- 每个条目 -->
+          <div class="rx-fl width-1-2">
+            <h6 class="each-title clear-margin-top">收到了邮件</h6>
+            <div class="each-cont">
+              <p class="title-small">25,895</p>
+              <p>平均71 /天</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <h6 class="each-title clear-margin-top">每月的邮件</h6>
+        <div class="each-cont">
+          <div id="total-email" class="chart-small"></div>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <div class="rx-clearfix">
+          <!-- 每个条目 -->
+          <div class="rx-fl width-1-2">
+            <h6 class="each-title clear-margin-top">发送方</h6>
+            <div class="each-cont">
+              <p class="title">84</p>
+              <p>97% 的参与者</p>
+            </div>
+          </div>
+          <!-- 每个条目 -->
+          <div class="rx-fl width-1-2">
+            <h6 class="each-title clear-margin-top">收件人</h6>
+            <div class="each-cont">
+              <p class="title">59</p>
+              <p>68% 的参与者</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <h6 class="each-title clear-margin-top">失败的邮件</h6>
+        <div class="each-cont">
+          <p class="title-small">15</p>
+        </div>
+      </div>
+      <!-- 每个条目 -->
+      <div class="item border-top">
+        <h6 class="each-title clear-margin-top">邮件最长的差距</h6>
+        <div class="each-cont">
+          <p class="title-small">2天,18个小时</p>
+          <p>从2月8日下午6点12分开始</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 脚本库 -->
+<script type="text/javascript" src="../assets/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/scripts/axios.min.js"></script>
+<!-- echarts 图表库 -->
+<script type="text/javascript" src="../src/echarts.min.js"></script>
+<!-- agChart -->
+<script type="text/javascript" src="../src/ag-charts.js"></script>
+<!-- 每小时短信 上 图表 -->
+<script type="text/javascript" src="../src/idea-report-3/hourly/hourly-smsT.js"></script>
+<!-- 每小时短信 下 图表 -->
+<script type="text/javascript" src="../src/idea-report-3/hourly/hourly-smsB.js"></script>
+<!-- 每小时邮件 上 图表 -->
+<script type="text/javascript" src="../src/idea-report-3/hourly/hourly-emailT.js"></script>
+<!-- 每小时邮件 下 图表 -->
+<script type="text/javascript" src="../src/idea-report-3/hourly/hourly-emailB.js"></script>
+<!-- 每月短信 图表 -->
+<script type="text/javascript" src="../src/idea-report-3/total/total-sms.js"></script>
+<!-- 每月邮件 图表 -->
+<script type="text/javascript" src="../src/idea-report-3/total/total-email.js"></script>
+
+<script>
+  // 每小时短信 上 图表
+  axios.get('../src/idea-report-3/hourly/hourly-smsT.json').then(function (response) {
+    agChart.hourly.smsT.init('#hourly-smsT', '', response.data);
+  });
+
+  // 每小时短信 下 图表
+  axios.get('../src/idea-report-3/hourly/hourly-smsB.json').then(function (response) {
+    agChart.hourly.smsB.init('#hourly-smsB', '', response.data);
+  });
+
+  // 每小时邮件 上 图表
+  axios.get('../src/idea-report-3/hourly/hourly-emailT.json').then(function (response) {
+    agChart.hourly.emailT.init('#hourly-emailT', '', response.data);
+  });
+
+  // 每小时邮件 下 图表
+  axios.get('../src/idea-report-3/hourly/hourly-emailB.json').then(function (response) {
+    agChart.hourly.emailB.init('#hourly-emailB', '', response.data);
+  });
+
+  // 每月短信 图表
+  axios.get('../src/idea-report-3/total/total-sms.json').then(function (response) {
+    agChart.total.sms.init('#total-sms', '', response.data);
+  });
+
+  // 每月邮件 图表
+  axios.get('../src/idea-report-3/total/total-email.json').then(function (response) {
+    agChart.total.email.init('#total-email', '', response.data);
+  });
+</script>
 </body>
 </html>

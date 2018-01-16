@@ -1,0 +1,333 @@
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+body {
+  font-size: 12px;
+  color: #979caf;
+  height: 100%;
+  background: #a2dce7;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*浮动&清除浮动*/
+.rx-fl {
+  float: left;
+}
+
+.rx-fr {
+  float: right;
+}
+
+.rx-clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/*定位*/
+.rx-relative {
+  position: relative;
+}
+
+.rx-absolute {
+  position: absolute;
+}
+
+/*居中*/
+.rx-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* 边框 */
+.border-top {
+  border-top: 1px solid #64adc0;
+}
+
+/* 边距 */
+.padding-left {
+  padding-left: 20px;
+}
+
+.padding-right {
+  padding-right: 20px;
+}
+
+.padding-left,
+.padding-right {
+  width: 50%;
+}
+
+.padding-left > div:last-child,
+.padding-right > div:last-child {
+  border-bottom: 1px solid #64adc0;
+}
+
+/* 页面样式 */
+.idea-report-4 {
+  padding: 50px;
+}
+
+.idea-report-4 h1.title {
+  font-size: 22px;
+  border-bottom: 1px solid #64adc0;
+  padding-bottom: 5px;
+}
+
+.idea-report-4 h1.title span:first-child,
+.each-title.special span:first-child {
+  display: inline-block;
+  width: 88px;
+  height: 34px;
+  font-size: 12px;
+  border-right: 1px dashed #64adc0;
+}
+
+.idea-report-4 h1.title span:last-child,
+.each-title.special span:last-child {
+  padding-left: 10px;
+}
+
+.each-title.special {
+  height: 28px;
+  line-height: 28px;
+}
+
+.each-title.special span:first-child {
+  height: 100%;
+}
+
+/* 刻度 */
+.calibration {
+  border-top: 1px dashed #64adc0;
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+
+.calibration ul li {
+  width: 14.285%;
+}
+
+.calibration ul li:not(:first-child) {
+  border-left: 1px dashed #64adc0;
+  padding-left: 18px;
+}
+
+/* 网格 */
+.grid-wrap {
+  padding: 5px 0;
+}
+
+.grid-wrap .each-grid:first-child {
+  top: 5px;
+  left: 0;
+  bottom: 5px;
+  width: 88px;
+  border-right: 1px dashed #64adc0;
+  padding-right: 5px;
+}
+
+.grid-wrap .each-grid:last-child {
+  padding-left: 98px;
+}
+
+.grid-wrap .each-grid .photo {
+  width: 120px;
+  height: 140px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.grid-wrap .each-grid em {
+  font-style: normal;
+  font-size: 58px;
+}
+
+.grid-wrap .each-grid em.small {
+  font-size: 28px;
+}
+
+.grid-wrap .each-grid em.large {
+  font-size: 126px;
+}
+
+/* 小网格 */
+.each-grid-small > div {
+  width: 50%;
+}
+
+.each-grid-small > div:first-child {
+  border-right: 1px dashed #64adc0;
+}
+
+.each-grid-small > div:last-child {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  padding-left: 10px;
+}
+
+/* 图表 */
+.chart-large {
+  width: 100%;
+  height: 300px;
+}
+
+/* 左右两侧布局 */
+.layout-left,
+.layout-right {
+  width: 50%;
+}
+
+.layout-left {
+  border-right: 1px dashed #64adc0;
+  padding-right: 25px;
+  color: #006e88;
+}
+
+/* 右侧 */
+.layout-right {
+  padding-left: 25px;
+  color: #ed3f36;
+}
+
+.idea-report-4 .layout-right h1.title span:first-child,
+.layout-right .each-title.special span:first-child,
+.layout-right .grid-wrap .each-grid:first-child,
+.layout-right .each-grid-small > div:first-child{
+  border-right: 1px dashed #ed3f36;
+}
+
+.layout-right .calibration ul li:not(:first-child){
+  border-left: 1px dashed #ed3f36;
+}
+
+.layout-right .padding-left > div:last-child,
+.layout-right .padding-right > div:last-child{
+  border-bottom: 1px solid #eb5a69;
+}
+
+.layout-right .calibration {
+  border-top: 1px dashed #ed3f36;
+}
+
+.layout-right .border-top{
+  border-top: 1px solid #eb5a69;
+}
+
+.idea-report-4 .layout-right h1.title {
+  color: #eb5a69;
+  border-bottom: 1px solid #eb5a69;
+}
+
+.layout-right .each-wrap .each-cont p.title,
+.layout-right .each-wrap .each-cont p.title-small {
+  color: #eb5a69;
+}
+
+/* 进度条 */
+.progress-bar {
+  padding: 10px 0 25px;
+}
+
+.progress-bar ul li {
+  position: relative;
+  width: 100%;
+  height: 16px;
+  border-bottom: 1px dashed #eb5a69;
+  margin-top: 15px;
+}
+
+.progress-bar ul li div {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 5px;
+  background: #eb5a69;
+}
+
+.progress-bar ul li span {
+  position: absolute;
+  top: -8px;
+  z-index: 999;
+}
+
+.progress-bar ul li span.name {
+  left: 2px;
+}
+
+.progress-bar ul li span.num {
+  right: 2px;
+}
+
+

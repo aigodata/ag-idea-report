@@ -25,7 +25,17 @@
 		// 每月产量 图表
 		monthly:{},
 		// 每月谈话 图表
-		weekly:{}
+		weekly:{},
+		// 每小时短信 图表
+		hourly:{},
+		// 每月短信 图表
+		total:{},
+		// 心电图 图表
+		electrocardiogram:{},
+		// 照片
+		photos:{},
+		// 旅行
+		travel:{}
 	};
 
 	agChart.common = {
