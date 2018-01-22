@@ -106,21 +106,19 @@
 				},
 				scale: true
 			},
+			color:['#47a5c9'],
 			//系列列表
 			series: [
 				{
 					name: '',
-					data: null,
-					type: 'bar',
-					barWidth: 22,
-					itemStyle: {
-						normal: {
-							color: 'rgba(255,255,255,0)',
-							borderColor:'#47a5c9',
-							borderWidth: 1,
-							borderType: 'solid',
-						}
-					}
+					type: 'line',
+					symbol: 'circle',
+					symbolSize: 0,
+					lineStyle: {
+						width: 1
+					},
+					step: 'start',
+					data: null
 				}]
 		};
 
