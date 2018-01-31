@@ -137,7 +137,9 @@ table {
 
 /* 页面样式 */
 .idea-report-1 {
-  padding: 50px;
+  width: 800px;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .idea-report-1 h1.title {

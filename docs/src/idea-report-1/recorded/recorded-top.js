@@ -68,10 +68,8 @@
 					show: false
 				},
 				axisLabel: {
-					textStyle: {
-						color: '#888',
-						fontSize: '12'
-					}
+					color: '#888',
+					fontSize: '12'
 				}
 			},
 			//y轴

@@ -29,7 +29,6 @@ body {
   font-size: 12px;
   color: #979caf;
   height: 100%;
-  background: #a2dce7;
 }
 
 ol, ul {
@@ -134,7 +133,10 @@ table {
 
 /* 页面样式 */
 .idea-report-4 {
-  padding: 50px;
+  width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+  background: #a2dce7;
 }
 
 .idea-report-4 h1.title {
@@ -244,20 +246,12 @@ table {
 }
 
 /* 左右两侧布局 */
-.layout-left,
-.layout-right {
-  width: 50%;
-}
-
 .layout-left {
-  border-right: 1px dashed #64adc0;
-  padding-right: 25px;
   color: #006e88;
 }
 
 /* 右侧 */
 .layout-right {
-  padding-left: 25px;
   color: #ed3f36;
 }
 
@@ -328,22 +322,6 @@ table {
 
 .progress-bar ul li span.num {
   right: 2px;
-}
-
-@media screen and (max-width: 1640px) {
-  .layout-left,
-  .layout-right {
-    float: none;
-    width: 100%;
-  }
-
-  .layout-left {
-    border-right: none;
-  }
-
-  .layout-right {
-    margin-top: 20px;
-  }
 }
 
 

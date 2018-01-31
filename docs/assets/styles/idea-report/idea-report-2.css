@@ -29,7 +29,6 @@ body {
   font-size: 12px;
   color: #655272;
   height: 100%;
-  background: #f48d7e;
 }
 
 ol, ul {
@@ -141,7 +140,10 @@ table {
 
 /* 页面样式 */
 .idea-report-2 {
-  padding: 50px;
+  width: 800px;
+  padding: 20px;
+  background: #f48d7e;
+  margin: 0 auto;
 }
 
 .idea-report-2 h1.title {
@@ -158,8 +160,8 @@ table {
 }
 
 .each-wrap .each-cont p.title {
-  font-size: 90px;
-  padding-top: 5px;
+  font-size: 56px;
+  padding: 23px 0;
 }
 
 .each-wrap .each-cont p.title-small {
